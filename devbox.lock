@@ -1,0 +1,37 @@
+{
+  "lockfile_version": "1",
+  "packages": {
+    "docker": {
+      "resolved": "github:NixOS/nixpkgs/faa1bc7353d7c0cbd92cb6bf25e794ee2e0b8282#docker",
+      "source": "nixpkg"
+    },
+    "earthly": {
+      "resolved": "github:NixOS/nixpkgs/faa1bc7353d7c0cbd92cb6bf25e794ee2e0b8282#earthly",
+      "source": "nixpkg"
+    },
+    "go@1.20": {
+      "last_modified": "2023-06-29T16:20:38Z",
+      "resolved": "github:NixOS/nixpkgs/3c614fbc76fc152f3e1bc4b2263da6d90adf80fb#go",
+      "source": "devbox-search",
+      "version": "1.20.5"
+    },
+    "istioctl@1.14": {
+      "last_modified": "2022-08-29T18:59:28Z",
+      "resolved": "github:NixOS/nixpkgs/c3e4dc4f6d23c7e41dda5ce98956c75c7779e2fa#istioctl",
+      "source": "devbox-search",
+      "version": "1.14.3"
+    },
+    "k9s": {
+      "resolved": "github:NixOS/nixpkgs/faa1bc7353d7c0cbd92cb6bf25e794ee2e0b8282#k9s",
+      "source": "nixpkg"
+    },
+    "kubectl": {
+      "resolved": "github:NixOS/nixpkgs/faa1bc7353d7c0cbd92cb6bf25e794ee2e0b8282#kubectl",
+      "source": "nixpkg"
+    },
+    "vault": {
+      "resolved": "github:NixOS/nixpkgs/faa1bc7353d7c0cbd92cb6bf25e794ee2e0b8282#vault",
+      "source": "nixpkg"
+    }
+  }
+}

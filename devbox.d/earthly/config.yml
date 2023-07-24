@@ -1,0 +1,10 @@
+global:
+    disable_log_sharing: true
+    disable_analytics: true
+    cache_size_mb: 50000
+    cache_size_pct: 90
+    buildkit_additional_config: |-
+        [registry."docker.io"]
+          mirrors = ["hub-mirror.c.163.com"]
+          mirrors = ["mirror.baidubce.com"]
+

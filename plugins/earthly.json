@@ -1,0 +1,15 @@
+{
+    "name": "earthly",
+    "version": "0.0.1",
+    "match": "^earthly.*$",
+    "readme": "设置earthly需要的环境变量",
+    "env": {
+        "EARTHLY_CONFIG": "{{ .DevboxDir }}/config.yml"
+    },
+    "create_files": {
+        "{{ .DevboxDir }}/config.yml": "earthly/config.yml"
+    },
+    "init_hook": [
+        "echo \"正在设置软件 \\033[33m earthly\\033[0m\""
+    ]
+}

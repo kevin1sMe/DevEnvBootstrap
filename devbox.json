@@ -1,0 +1,31 @@
+{
+    "packages": [
+      "go@1.20",
+      "docker",
+      "kubectl",
+      "istioctl@1.14",
+      "vault",
+      "earthly",
+      "k9s"
+    ],
+    "env": {
+      "WELCOME": "Welcome!"
+    },
+    "shell": {
+      "init_hook": [
+        "export PS1='📦 devbox> '"
+      ],
+      "scripts": {
+        "hello": "echo \"Hello kevinlin\""
+      }
+    },
+    "nixpkgs": {
+      "commit": "faa1bc7353d7c0cbd92cb6bf25e794ee2e0b8282"
+    },
+    "include": [
+      "path:plugins/vault.json",
+      "path:plugins/earthly.json",
+      "path:plugins/k9s.json"
+    ]
+  }
+  

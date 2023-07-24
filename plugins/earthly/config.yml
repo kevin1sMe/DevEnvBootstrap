@@ -1,0 +1,10 @@
+global:
+    disable_log_sharing: true
+    disable_analytics: true
+    cache_size_mb: 50000
+    cache_size_pct: 90
+    buildkit_additional_config: |-
+        [registry."docker.io"]
+        mirrors = ["https://hub-mirror.c.163.com"]
+        mirrors = ["https://mirror.baidubce.com"]
+    #secret_provider: /bin/sh -c 'vault kv get --field=$(echo $1 | cut -d ":" -f 2) $(echo $1 | cut -d ":" -f 1 | tr . /)' --

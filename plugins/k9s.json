@@ -1,0 +1,15 @@
+{
+    "name": "k9s",
+    "version": "0.0.1",
+    "match": "^k9s.*$",
+    "readme": "设置k9s需要的环境变量",
+    "env": {
+        "K9S_CONFIG": "{{ .DevboxDir }}/config.yml"
+    },
+    "create_files": {
+        "{{ .DevboxDir }}/config.yml": "k9s/config.yml"
+    },
+    "init_hook": [
+        "echo \"正在设置软件 \\033[33m k9s\\033[0m\""
+    ]
+}

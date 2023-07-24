@@ -1,0 +1,15 @@
+{
+    "name": "vault",
+    "version": "0.0.1",
+    "match": "^vault.*$",
+    "readme": "设置vault需要的环境变量",
+    "env": {
+        "VAULT_ADDR": "https://your-vault-url.com"
+    },
+    "create_files": {
+        "{{ .DevboxDir }}/vault/secret": "vault/secret"
+    },
+    "init_hook": [
+        "echo \"正在设置软件 \\033[33m Vault\\033[0m\""
+    ]
+}
